@@ -1,6 +1,10 @@
 docker pull aparnaghegde10917/bookstore:latest
+
+
 docker images
+
 docker network create bookstore-network
+
 docker network ls
 
 docker run -d \
@@ -12,7 +16,9 @@ docker run -d \
 mysql:8
 
 Verify MySQL Is Running
+
 docker ps
+
 docker logs mysql-db
 
 docker run -d \
@@ -25,7 +31,9 @@ docker run -d \
 aparnaghegde10917/bookstore:latest
 
 docker ps
+
 http://localhost:8081
 
 If it still exits, run:
+
 docker logs bookstore-app
